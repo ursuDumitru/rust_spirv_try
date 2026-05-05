@@ -3,4 +3,17 @@ name = "rust_gpu"
 version = "0.1.0"
 edition = "2024"
 
+[workspace]
+members = [
+    ".",
+    "crates/common",
+    "crates/runner",
+]
+default-members = [
+    ".",
+    "crates/common",
+    "crates/runner",
+]
+resolver = "3"
+
 [dependencies]

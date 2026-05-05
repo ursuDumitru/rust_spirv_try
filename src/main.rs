@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("Rust GPU thesis workspace. Run `cargo test` to verify the CPU baseline.");
 }
