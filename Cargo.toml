@@ -8,11 +8,16 @@ members = [
     ".",
     "crates/common",
     "crates/runner",
+    "crates/spirv_build",
 ]
 default-members = [
     ".",
     "crates/common",
     "crates/runner",
+]
+exclude = [
+    "kernels/rust_spirv/build_vector_add",
+    "kernels/rust_spirv/vector_add",
 ]
 resolver = "3"
 

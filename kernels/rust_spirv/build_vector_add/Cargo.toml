@@ -1,0 +1,9 @@
+[package]
+name = "rust_gpu_vector_add_spirv_build"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spirv-builder = "0.9"
+
+[workspace]

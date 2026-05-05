@@ -16,3 +16,5 @@ __pycache__/
 
 /reports/figures/*
 !/reports/figures/.gitkeep
+
+/kernels/rust_spirv/*/target/

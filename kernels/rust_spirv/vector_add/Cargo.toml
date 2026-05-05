@@ -1,0 +1,12 @@
+[package]
+name = "rust_gpu_vector_add_shader"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+spirv-std = { version = "0.9", features = ["glam"] }
+
+[workspace]

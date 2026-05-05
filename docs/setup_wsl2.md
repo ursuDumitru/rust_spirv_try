@@ -44,6 +44,14 @@ rustup show
 
 The `rustup override set nightly` command applies to the current repository directory. Run it from the repository root.
 
+Rust GPU is stricter than normal Rust projects because `rustc_codegen_spirv` depends on unstable compiler internals. Start with the active nightly already configured for the repository. The current SPIR-V builder crate is isolated under `kernels/rust_spirv/build_vector_add` and pins the older nightly required by `spirv-builder`.
+
+Install that Rust GPU toolchain with:
+
+```bash
+rustup toolchain install nightly-2023-05-27 --component rust-src --component rustc-dev --component llvm-tools-preview
+```
+
 ## SPIR-V Tools
 
 Install SPIR-V command-line tools:
